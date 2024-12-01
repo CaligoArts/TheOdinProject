@@ -21,5 +21,17 @@
             <li>List item 2.</li>
             <li>List item 3.</li>
         </ol>
+        <!--Absolute Links:-->
+        <a href="https://www.theodinproject.com">The Odin Project</a>   <!--Creates a clickable link to another page, opens in same page.-->
+        <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a>   <!--Creates a clickable link to another page, opens in different tab using rel attrib.-->
+        <!--rel attribute is used to describe relationship between pages-->
+        <!--noopener value prevents link from gaining access to the webpage from which it was opened.-->
+        <!--noreferrer value prevents opened link from knowing which webpage or resource has a link or reference to it. *also includes the noopener behaviour and thus can be used by itself as well.-->
+        <!--These are added for security purposes to prevent phishing attacks like tabnabbing. *Good coding pactice to add to any target="_blank" links.-->
+        <!--Relative Links:-->
+        <a href="./pages/about.html">About</a>  <!--Use ./ to avoid issues by specifying to your code to look for file/directory relative to current dir.-->
+        <img src="./images/dog.jpg" alt="Dog pic" height="310" width="310">    <!--Use ../ to go up to parent directory. *Basically says to check root directory--> 
+        <!--Always use alt to name image incase it doesn't load-->
+        <!--Always set height & width of images to avoid page flashes and jumps while loading-->
     </body>
 </html>
