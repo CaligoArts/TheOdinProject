@@ -5,10 +5,13 @@
         <title>HTML Notebook</title>    <!--Name that shows in Browser Tab-->
     </head>
 
-    <body>      <!--All Site contents go inside here-->
+    <!--All Site contents go inside <body></body>-->
+    <body>
         <h1>HTML Notebook</h1>  <!--Headings, 6 sizes; h1 is largest, h6 is smallest, they are displayed larger and bolder & should be used for page hierarchy. h1 for Overall page name.-->
-        <p>Paragraph 1</p>  <!--Paragragh tag-->
-        <strong>Strong element</strong> <!--Makes Bold and labels important for screen readers to change to communicate importance-->
+        <!--Paragragh tag - Used to seperate lines and sections of text and content-->
+        <p>*This is just a simplistic view of basic HTML. To actually see the Notes on what everything is, right click & view page source, to see the code behind each element with comments.</p>
+        <!--Makes Bold and labels important for screen readers to change to communicate importance-->
+        <strong>Main thing to know about HTML is that you use Tags & Elements. Most all tags have an opening tag & closing tag. Void tags are the exception like meta & img because it has no closing tag.</strong>
         <p><em>Italic</em></p> <!--Emphasizes text by making it Italic. Put inside a <p> element to seperate from <strong> as these don't separate sections.-->
         <!--This is how to comment code so it doesn't display in browser but you can explain your code to other developers that are working on it or remind yourself in the future.-->
         <ul>    <!--Creates Unordered list, meaning it uses bullet points-->
@@ -21,15 +24,25 @@
             <li>List item 2.</li>
             <li>List item 3.</li>
         </ol>
-        <!--Absolute Links:-->
-        <a href="https://www.theodinproject.com">The Odin Project</a>   <!--Creates a clickable link to another page, opens in same page.-->
-        <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a>   <!--Creates a clickable link to another page, opens in different tab using rel attrib.-->
-        <!--rel attribute is used to describe relationship between pages-->
-        <!--noopener value prevents link from gaining access to the webpage from which it was opened.-->
-        <!--noreferrer value prevents opened link from knowing which webpage or resource has a link or reference to it. *also includes the noopener behaviour and thus can be used by itself as well.-->
-        <!--These are added for security purposes to prevent phishing attacks like tabnabbing. *Good coding pactice to add to any target="_blank" links.-->
-        <!--Relative Links:-->
-        <a href="./pages/about.html">About</a>  <!--Use ./ to avoid issues by specifying to your code to look for file/directory relative to current dir.-->
+        <p>
+            <!--Absolute Links:-->
+            <p>
+                <!--Creates a clickable link to another page, opens in same page.-->
+                <a href="https://www.theodinproject.com">The Odin Project</a> Example of Absolute Link that opens in Same page. Contains full link, including domain name.
+            </p>
+            <p>
+                <!--Creates a clickable link to another page, opens in different tab using rel attrib.-->
+                <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a> Example of Absolute Link that opens in new tab. 
+            </p>  
+            <!--rel attribute is used to describe relationship between pages-->
+            <!--noopener value prevents link from gaining access to the webpage from which it was opened.-->
+            <!--noreferrer value prevents opened link from knowing which webpage or resource has a link or reference to it. *also includes the noopener behaviour and thus can be used by itself as well.-->
+            <!--These are added for security purposes to prevent phishing attacks like tabnabbing. *Good coding pactice to add to any target="_blank" links.-->
+        </p>
+        <p>
+            <!--Relative Links:-->
+            <a href="./pages/about.html">About</a>  <!--Use ./ to avoid issues by specifying to your code to look for file/directory relative to current dir.-->
+        </p>
         <img src="./images/dog.jpg" alt="Dog pic" height="310" width="310">    <!--Use ../ to go up to parent directory. *Basically says to check root directory--> 
         <!--Always use alt to name image incase it doesn't load-->
         <!--Always set height & width of images to avoid page flashes and jumps while loading-->
