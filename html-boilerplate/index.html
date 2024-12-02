@@ -36,10 +36,11 @@
         </p>
         <p>
             <!--Makes Bold and labels important for screen readers to change to communicate importance-->
-            <strong>Bold</strong>
+            <strong>Bold</strong> - The strong element is used to make text Bold.
         </p>
         <!--Emphasizes text by making it Italic. Put inside a <p> element to seperate from <strong> as these don't separate sections.-->
-        <p><em>Italic</em></p>
+        <p><em>Italic</em> - The em element is used to make text Italic.
+        </p>
         <p>
             <!--Absolute Links:-->
             <p>
@@ -48,7 +49,7 @@
             </p>
             <p>
                 <!--Creates a clickable link to another page, opens in different tab using rel attrib.-->
-                <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a> Example of Absolute Link that opens in new tab. 
+                <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer">The Odin Project</a> Example of Absolute Link that opens in new tab using relation attribute for security purpuses. 
             </p>  
             <!--rel attribute is used to describe relationship between pages-->
             <!--noopener value prevents link from gaining access to the webpage from which it was opened.-->
@@ -57,7 +58,8 @@
         </p>
         <p>
             <!--Relative Links:-->
-            <a href="./pages/about.html">About</a>  <!--Use ./ to avoid issues by specifying to your code to look for file/directory relative to current dir.-->
+            <!--Use ./ to avoid issues by specifying to your code to look for file/directory relative to current dir.-->
+            <a href="./pages/about.html">About</a> Example of a Relative link as it calls file from current parent directory.
         </p>
         <img src="./images/dog.jpg" alt="Dog pic" height="310" width="310">    <!--Use ../ to go up to parent directory. *Basically says to check root directory--> 
         <!--Always use alt to name image incase it doesn't load-->
